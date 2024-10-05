@@ -26,5 +26,6 @@
 - build the user card on feed
 - Edit profile Feature
 - Show toast message on save of profile
-- See all my connections
+- New Page - See all my connections
+- New Page - See all my Conenction REquests
 - Body NavBar Route=/ => Feed Route=/login => Login Route=/connetions => Connections Router=/profile => Profile

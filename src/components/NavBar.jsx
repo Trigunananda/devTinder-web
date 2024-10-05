@@ -10,11 +10,11 @@ const NavBar = () => {
     const navigation = useNavigate()
     const handleLogout = async () => {
         try {
-           await axios.post(BASE_URL + "/logout", {},{ withCredentials: true })
+            await axios.post(BASE_URL + "/logout", {}, { withCredentials: true })
             dispatch(removeUser())
-          return  navigation("/login")
+            return navigation("/login")
         } catch (error) {
-           console.log(error) 
+            console.log(error)
         }
     }
     const user = useSelector((store) => store.user);
@@ -52,6 +52,9 @@ const NavBar = () => {
                             </li>
                             <li>
                                 <Link to="/connections">Connections</Link>
+                            </li>
+                            <li>
+                                <Link to="/requests">Requests</Link>
                             </li>
                             <li>
                                 <a onClick={handleLogout}>Logout</a>
