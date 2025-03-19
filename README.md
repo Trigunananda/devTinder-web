@@ -28,5 +28,8 @@
 - Show toast message on save of profile
 - New Page - See all my connections
 - New Page - See all my Conenction REquests
-- Feature - Accept Reject Connection Request
+- Feature - Accept/Reject connection request
+- Send/Ignore the user card from the feed
+- Signup New User
+- E2E testing
 - Body NavBar Route=/ => Feed Route=/login => Login Route=/connetions => Connections Router=/profile => Profile
