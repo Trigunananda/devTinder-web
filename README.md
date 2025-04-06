@@ -67,7 +67,7 @@ npm -v
     - sudo systemctl start nginx
     - sudo systemctl enable nginx
     - copy code from dist(build files) to /var/www/html/ means cd /var/www/html/
-    - copy the dist folder to /var/www/html/  so type sudo scp -r dist/* /var/www/html/
+    - copy the dist folder to /var/www/html/,git pull ,npm run build   after that type sudo scp -r dist/* /var/www/html/
     - check the status type cd /var/www/html/ then type ls
     - enable port :80 of your instance
     - after successfully run of the public ip then it map with the domain name so that it is available anywhere with the domain name
@@ -86,11 +86,12 @@ npm -v
     - there should be a process to run npm run start is always run in the background
     - in devTinder type npm install pm2 -g(Advanced,production process manager for nodeJs)
     - pm2 start npm -- start(new process has been started)
-    - pm2 logs
+    - pm2 log
     - pm2 flush npm(name of the application) for clear the logs
     - pm2 list
     - pm2 stop npm
     - pm2 delete npm for delete the process
+    - npm install
     - pm2 start npm --name "devTinder-backend" -- start for custom the name
     - frontend = http://43.204.96.49
     - backend =  http://43.204.96.49:7777/
@@ -153,3 +154,32 @@ AWS_SES_SECRET = "aws secret key" and AWS_ACCESS_KEY = "aws access key"
 - then go to code example of amazon ses,click on send email for reference https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples
 - write code for sending email address
 - make the email dynamic by passing the more parameter to run the functiom
+
+# Scheduling cron jobs in nodejs
+- Installing node-cron
+- Learning about cron expressions syntax - crontab.guru
+- [crontab.guru](https://crontab.guru/)
+- Schedule a job
+- date-fns
+- Find all the unique  email Id who have got connection Request in previous day
+- Send Email
+- Explore queue mechanim to send bulk emails
+- Amazon SES Bulk Emails
+- Make sendEmail function dynamic
+- bee-queue & bull npm packages
+
+# Razorpay Payment Gateway Inegration
+- Sign up on Razorpay & complete KYC 
+- Cerated a UI for premium page
+- Creating an API for create order in backend
+- added my key and secret in env file
+- Intialized Razorpay in utils
+- creating order on Razorpay
+- create Schema and model
+- saved the order in payments collection
+- make the API dynamic
+- Setup RRazorpay webhook on your live APi
+- Ref - https://github.com/razorpay/razorpay-node/tree/master/documents
+- Ref - https://razorpay.com/docs/payments/server-integration/nodejs/integration-steps/#integrate-with-razorpay-payment-gateway
+- Ref - https://razorpay.com/docs/webhooks/validate-test/
+- Ref - https://razorpay.com/docs/webhooks/payloads/payments/
